@@ -1,0 +1,3 @@
+<div class="td-container">
+    <app-todo *ngFor="let td of todosService.todos|async" [name]="td.text" [completed]="td.done"></app-todo>
+</div>
